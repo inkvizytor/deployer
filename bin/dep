@@ -69,8 +69,8 @@ $autoload = [
 ];
 
 $includes = [
-    $deployFilePath . '/vendor/adrian1207/deployer',
-    __DIR__ . '/../../../adrian1207/deployer',
+    $deployFilePath . '/vendor/inkvizytor/deployer',
+    __DIR__ . '/../../../inkvizytor/deployer',
     __DIR__ . '/../'
 ];
 
@@ -110,7 +110,7 @@ if (is_readable($installedFile)) {
     $packages = $installed['packages'] ?? $installed;
 
     foreach ($packages as $package) {
-        if ($package['name'] === 'adrian1207/deployer') {
+        if ($package['name'] === 'inkvizytor/deployer') {
             $version = $package['version'];
             break;
         }
