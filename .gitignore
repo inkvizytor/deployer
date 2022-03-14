@@ -2,3 +2,7 @@
 *.phar
 .phpunit.result.cache
 docker-compose.override.yml
+.idea/vcs.xml
+.idea/php.xml
+.idea/modules.xml
+.idea/deployer.iml
