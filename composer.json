@@ -51,7 +51,7 @@
         "react/http": "^1",
         "symfony/console": "^5|^6",
         "symfony/polyfill-php80": "^1.22",
-        "symfony/process": "^5",
+        "symfony/process": "^5|^6",
         "symfony/yaml": "^5"
     },
     "require-dev": {
