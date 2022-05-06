@@ -39,7 +39,7 @@ class CommandEvent
     /**
      * @return Command
      */
-    public function getCommand()
+    public function getCommand(): Command
     {
         return $this->command;
     }
@@ -47,7 +47,7 @@ class CommandEvent
     /**
      * @return InputInterface
      */
-    public function getInput()
+    public function getInput(): InputInterface
     {
         return $this->input;
     }
@@ -55,7 +55,7 @@ class CommandEvent
     /**
      * @return OutputInterface
      */
-    public function getOutput()
+    public function getOutput(): OutputInterface
     {
         return $this->output;
     }
@@ -63,7 +63,7 @@ class CommandEvent
     /**
      * @return \Throwable
      */
-    public function getException()
+    public function getException(): ?\Throwable
     {
         return $this->exception;
     }
@@ -71,7 +71,7 @@ class CommandEvent
     /**
      * @return mixed
      */
-    public function getExitCode()
+    public function getExitCode(): mixed
     {
         return $this->exitCode;
     }

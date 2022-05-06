@@ -7,6 +7,8 @@
 
 namespace Deployer\Collection;
 
+use Traversable;
+
 class Collection implements CollectionInterface, \Countable
 {
     /**
@@ -55,7 +57,7 @@ class Collection implements CollectionInterface, \Countable
     /**
      * {@inheritdoc}
      */
-    public function getIterator()
+    public function getIterator(): Traversable
     {
         return new \ArrayIterator($this->values);
     }
@@ -120,7 +122,7 @@ class Collection implements CollectionInterface, \Countable
      * @return mixed
      * @throws \InvalidArgumentException
      */
-    public function first()
+    public function first(): mixed
     {
         if ($this->count() === 0) {
             throw new \InvalidArgumentException("no elements found in collection.");
