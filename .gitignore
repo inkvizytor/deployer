@@ -3,3 +3,7 @@
 *.phar
 phpunit.xml
 .phpunit.result.cache
+.idea/vcs.xml
+.idea/php.xml
+.idea/modules.xml
+.idea/deployer.iml
